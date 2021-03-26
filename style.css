@@ -52,9 +52,39 @@ header {
   border-right: 2px black solid;
 }
 
+@media (max-width: 767px) {
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 980px) {
+  .nav-link {
+    font-size: 20px
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-link {
+    font-size: 25px;
+  }
+}
+
+
 .nav-link {
   display: block;
-  font-size: 25px;
   margin-top: 15px;
   margin-left: 24px;
 }
