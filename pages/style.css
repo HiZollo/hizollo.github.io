@@ -17,3 +17,33 @@ a {
 a:active {
   color: #35AB4D;
 }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+table.devimg {
+  width:190px;
+  margin: 5px;
+  background: #DFE8E1;
+}
+
+.devav {
+
+  border-bottom: 1px black solid;
+}
+
+.devav img {
+  width:180px;
+  height:180px;
+  display:block;
+  margin: 0px auto;
+  align-self: center;
+  padding: 0px;
+}
+
+.devname {
+  text-align: center;
+}
