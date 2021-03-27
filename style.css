@@ -48,14 +48,7 @@ header {
   display: inline-block;
   height: 35px;
   width: 35px;
-  border: 1px black solid;
-  border-radius: 50%;
-  background-color: #FDFDFD;
   cursor: pointer;
-}
-
-#switch:hover {
-  background-color: #EBEBEB;
 }
 
 #switch img {

@@ -6,4 +6,14 @@ body {
   margin-left: 2%;
   width: 95%;
   overflow-x: hidden;
+  font-family: 'Helvetica', 'Arial';
+}
+
+a {
+  text-decoration: none;
+  color: #2A7A97;
+}
+
+a:active {
+  color: #35AB4D;
 }
