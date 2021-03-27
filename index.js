@@ -1,5 +1,5 @@
 const loadPage = file => {
-  document.getElementById('frame').src = file;
+  document.getElementById('frame').src = `${file}#top`;
 }
 
 const popWindow = file => {
@@ -7,7 +7,7 @@ const popWindow = file => {
 }
 
 $(document).ready(() => {
-  loadPage("mp.html");
+  loadPage("pages/mp.html");
 
   $("#switch").click(function () {
     $("#nav").animate({opacity: 'toggle'}, 1000);
