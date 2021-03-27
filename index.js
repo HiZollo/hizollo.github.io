@@ -7,9 +7,8 @@ const popWindow = file => {
 }
 
 $(document).ready(() => {
-  loadPage("welcome.html");
+  loadPage("mp.html");
 
-  let moveRight = true;
   $("#switch").click(function () {
     $("#nav").animate({opacity: 'toggle'}, 1000);
   });

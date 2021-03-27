@@ -1,0 +1,9 @@
+html {
+  width: 100%;
+}
+
+body {
+  margin-left: 2%;
+  width: 95%;
+  overflow-x: hidden;
+}
