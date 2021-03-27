@@ -31,7 +31,6 @@ table.devimg {
 }
 
 .devav {
-
   border-bottom: 1px black solid;
 }
 
@@ -46,4 +45,37 @@ table.devimg {
 
 .devname {
   text-align: center;
+}
+
+table.blog {
+  margin: 10px;
+  width: 250px;
+  background-color: #E8EFEF;
+}
+
+.blogimg {
+  border-bottom: 1px black solid;
+}
+
+.blogimg img {
+  width:150px;
+  height:150px;
+  display:block;
+  margin: 0px auto;
+  align-self: center;
+  padding: 0px;
+}
+
+.blogdes {
+  font-size: 14px;
+}
+
+.helplist-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.dc-mention {
+  color: #5D71C3;
+  background-color: rgb(241, 243, 251);
 }
