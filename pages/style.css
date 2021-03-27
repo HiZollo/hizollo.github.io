@@ -30,11 +30,11 @@ table.devimg {
   background: #DFE8E1;
 }
 
-.devav {
+.devav, .eventimg {
   border-bottom: 1px black solid;
 }
 
-.devav img {
+.devav img, .eventimg img {
   width:180px;
   height:180px;
   display:block;
@@ -43,7 +43,7 @@ table.devimg {
   padding: 0px;
 }
 
-.devname {
+.devname, .eventdes {
   text-align: center;
 }
 
@@ -78,4 +78,21 @@ table.blog {
 .dc-mention {
   color: #5D71C3;
   background-color: rgb(241, 243, 251);
+}
+
+table.event {
+  margin: 10px;
+  width: 200px;
+  background-color: #FFFBEB;
+}
+
+iframe {
+  height: 1546px;
+  width: 500px;
+}
+
+@media (max-width: 480px) {
+  iframe {
+    width:300px;
+  }
 }
