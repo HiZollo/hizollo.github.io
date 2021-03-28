@@ -31,6 +31,7 @@ table.devimg {
 }
 
 .devav, .eventimg {
+  padding: 10px 5px;
   border-bottom: 1px black solid;
 }
 
@@ -95,4 +96,55 @@ iframe {
   iframe {
     width:300px;
   }
+}
+
+.shop-item-link {
+  position: relative;
+  display: block;
+  margin: 10px;
+  color: #104558;
+}
+
+.shop-item-link:hover {
+  top: -2px;
+  left: -2px;
+  box-shadow: 7px 7px 3px #848484;
+  border-top: 1px #848484 solid;
+  border-left: 1px #848484 solid
+}
+
+.shop-item-link:active {
+  color: #1B7392;
+}
+
+table.shop-item {
+  background-color: #F2F8FA;
+  height: 250px;
+}
+
+.item-pic {
+  width: 200px;
+  height: 210px;
+  padding: 0px;
+  border-bottom: 1px black solid
+}
+
+.item-pic img {
+  width: 180px;
+  display: block;
+  margin: 0px auto;
+}
+
+.item-title {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px #C2E2EE dashed;
+}
+
+.item-price {
+  text-align: center;
+  background-color: #E1F3F9;
+  padding-top: 0px;
+  font-size: 15px;
 }
