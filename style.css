@@ -19,15 +19,29 @@ header {
   flex-direction: row;
 }
 
+#workmark {
+  height: 60px;
+  margin-left: 30px;
+}
+
+#workmark a img {
+  height: 50px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
 #header-links {
   margin-left: 0%;
   padding-right: 20px;
   text-align: right;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .header-link {
-  display: inline-block;
+  display: block;
   font-size: 15px;
   margin-top: 20px;
   margin-left: 18px;
@@ -70,15 +84,24 @@ header {
   position: relative;
 }
 
+.nav-link {
+  display: block;
+  margin-top: 15px;
+  margin-left: 27px;
+}
+
 @media (max-width: 767px) {
   .nav-link {
     font-size: 13px;
+    margin-left: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .nav-link {
-    font-size: 15px;
+    font-size: 13px;
+    margin-left: 0px;
+    margin-bottom: 18px;
   }
   .header-link {
     font-size: 13px;
@@ -103,13 +126,6 @@ header {
   }
 }
 
-
-.nav-link {
-  display: block;
-  margin-top: 15px;
-  margin-left: 27px;
-}
-
 .nav-link a {
   text-decoration: none;
   color: #6A7575;
@@ -132,4 +148,10 @@ iframe {
   margin: 0px auto;
   height: 150%;
   width: 98%;
+}
+
+@media (max-width: 480px) {
+  .pc-only {
+    display:none;
+  }
 }
