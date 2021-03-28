@@ -100,11 +100,24 @@ header {
 @media (max-width: 480px) {
   .nav-link {
     font-size: 13px;
+    margin-left: 5px;
+    margin-bottom: 18px;
+  }
+  .header-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-link {
     margin-left: 0px;
     margin-bottom: 18px;
   }
   .header-link {
     font-size: 13px;
+  }
+  .width-s-no {
+    display: none;
   }
 }
 
