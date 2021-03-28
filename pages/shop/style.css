@@ -30,6 +30,8 @@
 }
 
 #item-img img {
+  display: block;
+  margin: 0px auto;
   width: 90%;
 }
 
@@ -37,10 +39,15 @@
   width: 100%;
 }
 
-#item-info > div {
+#item-info > table, #item-info > div {
   margin-left: 10%;
   padding: 10px;
   font-size: 20px;
+  border-bottom: 1px black solid;
+}
+
+td:first-child {
+  padding-right: 30px;
 }
 
 #time {
@@ -106,6 +113,14 @@
     flex-direction: column;
   }
 
+  #item-info > div {
+    margin: 0px auto;
+  }
+
+  #price div {
+    margin: 0px auto;
+  }
+
   #item-img {
     width: 70%;
     margin: 0px auto;
@@ -113,10 +128,14 @@
     border-bottom: 1px black solid;
   }
 
-  #item-info > div {
+  #item-info > table {
     margin: 0px auto;
     margin-top: 20px;
     font-size: 15px;
+  }
+
+  td:first-child {
+    padding-right: 15px;
   }
 
   #hzcicon {
@@ -128,8 +147,12 @@
 }
 
 @media (max-width: 320px) {
-  #item-info > div {
+  #item-info > table {
     font-size: 13px;
+  }
+
+  td:first-child{
+    padding-right: 10px;
   }
 
   #hzcicon {
