@@ -24,10 +24,23 @@ a:active {
   flex-wrap: wrap;
 }
 
+h2 {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px black solid;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}
+
 table.devimg {
   width:190px;
   margin: 5px;
   background: #DFE8E1;
+  position: relative;
 }
 
 .devav, .eventimg {
@@ -52,6 +65,7 @@ table.blog {
   margin: 10px;
   width: 250px;
   background-color: #E8EFEF;
+  position: relative;
 }
 
 .blogimg {
@@ -98,6 +112,11 @@ iframe {
   }
 }
 
+.event-link {
+  padding: 0px;
+  position: relative;
+}
+
 .shop-item-link {
   position: relative;
   display: block;
@@ -105,12 +124,12 @@ iframe {
   color: #104558;
 }
 
-.shop-item-link:hover {
+.shop-item-link:hover, table.blog:hover, table.devimg:hover, .event-link:hover {
   top: -2px;
   left: -2px;
   box-shadow: 7px 7px 3px #848484;
   border-top: 1px #848484 solid;
-  border-left: 1px #848484 solid
+  border-left: 1px #848484 solid;
 }
 
 .shop-item-link:active {
