@@ -167,3 +167,14 @@ table.shop-item {
   padding-top: 0px;
   font-size: 15px;
 }
+
+@media (max-width: 500px) {
+  .flex {
+    justify-content: center;
+    align-content: center;
+  }
+  #form ~ iframe {
+    display: block;
+    margin: 0px auto;
+  }
+}
