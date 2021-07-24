@@ -89,8 +89,9 @@ table.devimg {
 }
 
 .dc-mention {
+  font-weight: bold;
   color: #5D71C3;
-  background-color: rgb(241, 243, 251);
+  background-color: rgb(233, 235, 243);
 }
 
 .dc-spoiler {
