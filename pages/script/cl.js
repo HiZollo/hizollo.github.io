@@ -1,6 +1,7 @@
 $(document).ready(() => {
   $(".cl-wrapper-content").hide();
   $(".cl-wrapper-title").click(function() {
+    $(".cl-wrapper-content").not($(this).next()).slideUp();
     $(this).next().slideToggle();
   });
 

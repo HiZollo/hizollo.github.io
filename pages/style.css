@@ -89,12 +89,24 @@ table.devimg {
 }
 
 .dc-mention {
+  display:inline-block;
+  cursor: pointer;
+  font-family: Helvetica Arial;
+  font-size: 14px;
+  padding: 2px 1px;
+  border-radius: 4px;
   font-weight: bold;
   color: #5D71C3;
   background-color: rgb(233, 235, 243);
 }
 
+.dc-mention:hover {
+  color: #FFFFFF;
+  background-color: #566AEA;
+}
+
 .dc-spoiler {
+  border-radius: 4px;
   cursor: pointer;
   color: black;
   background-color: black;
