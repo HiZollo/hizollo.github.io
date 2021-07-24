@@ -117,12 +117,11 @@ iframe {
   padding: 0px;
   cursor: pointer;
   background-color: #EFEFEF;
-  height: 40px;
 }
 
 .cl-wrapper-title th {
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
   padding: 9px;
 }
 
