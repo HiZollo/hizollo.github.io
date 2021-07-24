@@ -13,6 +13,41 @@
   <h2>beta 0.10.x</h2>
   <div class="flex">
 
+  <!-- beta 0.10.6 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>beta 0.10.6</th></tr>
+    <tr class="cl-wrapper-content"><td><strong>2021 年 7 月 24 日</strong><ul>
+      <li>修復了一些 bug</li>
+      <li>新增子指令的捷徑用法</li>
+      <ul>
+        <li>現在你可以忽略子指令的名稱，直接呼叫下轄指令</li>
+        <li>像是 <code>z!play</code>、<code>z!tank</code> 等等</li>
+        <li>如果下轄指令的名稱與一般指令名稱衝突，會以一般指令為優先，如 <code>z!fact</code></li>
+      </ul>
+      <li>新增 <code>z!guessab</code> 猜 AB 遊戲</li>
+      <ul>
+        <li>你可以輸入 stop 提前結束遊戲</li>
+      </ul>
+      <li>我們重寫了 HiZollo 的圈圈叉叉 AI，現在他幾乎可以說是完美的了</li>
+      <ul>
+        <li>但還是會有 8.7% 的機率亂下</li>
+      </ul>
+      <li>現在同一個玩家不能同時遊玩兩種遊戲了</li>
+      <ul>
+        <li>但目前僅限於新的猜 AB（<code>z!guessab</code>）與圈圈叉叉（<code>z!tictactoe</code>）而已</li>
+        <li>其他遊戲目前仍可以多開，但我們並不建議這麼做，未來也會逐步將所有遊戲都加入禁止多開的行列中</li>
+      </ul>
+      <li>暫時關閉 <code>z!minecraft</code> 指令</li>
+      <ul>
+        <li>因為下轄的 crafting 指令耗費過多資源，我們將在修復完成後重新開啟此指令</li>
+      </ul>
+      <li>我們將在後臺伺服器中開放二周年闖關活動時的記錄頻道 <span class="dc-mention">#event-log</span>，為期一個禮拜</li>
+      <ul>
+        <li>這是為了讓大家回顧一下當時的<span class="dc-spoiler">疊屍慘案</span></li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
   <!-- beta 0.10.5 -->
   <table class="cl-wrapper">
     <tr class="cl-wrapper-title"><th>beta 0.10.5</th></tr>

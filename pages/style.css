@@ -93,6 +93,12 @@ table.devimg {
   background-color: rgb(241, 243, 251);
 }
 
+.dc-spoiler {
+  cursor: pointer;
+  color: black;
+  background-color: black;
+}
+
 table.event {
   margin: 10px;
   width: 200px;
