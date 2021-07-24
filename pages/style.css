@@ -130,6 +130,12 @@ iframe {
   display: inline-block;
 }
 
+.cl-wrapper-content td strong {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
 .cl-wrapper-content td ul li {
   padding: 4px;
 }
