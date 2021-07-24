@@ -5,10 +5,188 @@
   <meta name="author" content="HiZollo Dev Team" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="script/cl.js"></script>
 </head>
 <body>
   <h1>HiZollo 的更新日誌</h1>
-  <hr />
-  由於開發者太過於勤勞，更新數量太多，我們將會於日後慢慢搬運，敬請期待。
+  <h2>beta 0.10.x</h2>
+  <div class="flex">
+
+  <!-- beta 0.10.5 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.5</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>新增以 ? 開頭的附加指令</li>
+      <ul>
+        <li>這些指令只有在 HiZollo 後臺伺服器中才能使用</li>
+      </ul>
+      <li>新增 <code>z!lightsup</code> 點燈遊戲</li>
+      <ul>
+        <li>在遊戲過程中可以輸入 answer 以顯示答案</li>
+        <li>也可以輸入 stop 提前結束遊戲</li>
+      </ul>
+      <li>在 <code>z!think</code> 指令中新增其他表情</li>
+      <ul>
+        <li>你可以讓他隨機發送，也可以指定</li>
+        <li>詳細使用方式可以使用 <code>z!help think</code> 查詢</li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.4a -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.4a</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>修復了一些排版問題</li>
+      <li>修復了部份時候會出現的格式問題</li>
+      <li>新增 <code>z!music</code> 下的 again 指令</li>
+      <ul>
+        <li>會把當前正在播放的東西加入隊列最上方</li>
+        <li>如果想要再聽一次，這樣或許方便了點</li>
+      </ul>
+      <li>校正回歸端午節</li>
+      <ul>
+        <li>絕對不是因為我們記錯日期，哈哈</li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.4 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.4</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>修復了一些排版問題</li>
+      <li>新增 <code>z!minecraft</code> 指令以及其下的 crafting 指令</li>
+      <ul>
+        <li>可以搜尋 minecraft 中的物品的合成方式</li>
+        <li>未來會增添更多 minecraft 相關指令</li>
+      </ul>
+      <li>因應投票結果，我們新增了 <code>z!links</code>，並移除了 <code>z!invite</code> 和 <code>z!hzweb</code></li>
+      <ul>
+        <li>該指令會收錄 HiZollo 的相關連結</li>
+        <li>包含機器人清單上的連結，請務必幫我們投下一票</li>
+      </ul>
+      <li>將 <code>z!serverinfo</code> 改名為 <code>z!server</code></li>
+      <ul>
+        <li>因為原本的 <code>z!server</code> 已經併入 <code>z!links</code></li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.3a -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.3a</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>修改了子指令類的排版模式</li>
+      <li>更改了 <code>z!music play</code> 的搜尋機制</li>
+      <ul>
+        <li>只會搜尋非網址格式的文字</li>
+      </ul>
+      <li>現在起，<code>z!music play</code> 可以抓取播放清單了</li>
+      <ul>
+        <li>當連結是播放清單格式時，會抓取播放清單的內容並加入隊列</li>
+        <li>抓取清單可能會花上一些時間，請耐心等候</li>
+      </ul>
+      <li><code>z!music skip</code> 的功能更多了</li>
+      <ul>
+        <li>除了原有功能，也可用來移除隊列中的一串曲目</li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.3 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.3</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>修復了一些排版問題</li>
+      <li>現在起，<code>z!music play</code> 可以直接搜尋了</li>
+      <ul>
+        <li>當你輸入的東西不是合法的網址時，就會被當作搜尋字詞</li>
+        <li>可以直接在 Youtube 上搜尋並點播</li>
+      </ul>
+      <li>將 <code>z!music playlist</code> 及 <code>z!music nowplaying</code> 的排版重構</li>
+      <ul>
+        <li>有圖可以看，這樣是不是就不會太單調了</li>
+        <li>也多了不少資訊</li>
+      </ul>
+      <li><code>z!dice</code> 可以透過輸入參數來取得特定骰子了</li>
+      <ul>
+        <li>使用 <code>z!help dice</code> 可以看到所有使用方法</li>
+      </ul>
+      <li>重新排版了 <code>z!guildrop</code> 顯示出來的清單</li>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.2 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.2</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>修復了一些排版問題</li>
+      <li>新增 <code>z!music</code> 下的 loop 指令</li>
+      <ul>
+        <li>可以讓機器人重複播放目前樂曲</li>
+        <li>還有點不太大的小問題，望能儘速解決</li>
+      </ul>
+      <li>指令清單重新排版了</li>
+      <ul>
+        <li>新增「子指令」分類，將「功能」分類中有子指令的指令獨立出來</li>
+        <li>這是為了避免「功能」分類太長候</li>
+      </ul>
+      <li>重新設計 <code>z!dice</code></li>
+      <ul>
+        <li>骰子經過重新繪製，並使用表情符號方式傳送</li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.1 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.1</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>新增 osu! 指令</li>
+      <ul>
+        <li>使用 <code>z!osu</code> 可以看到目前有的功能</li>
+        <li>未來將陸續添加</li>
+      </ul>
+      <li>新指令：<code>z!deletemsg</code></li>
+      <ul>
+        <li>可以幫助你在一定時間後刪除訊息</li>
+      </ul>
+    </ul></td></tr>
+  </table>
+
+  <!-- beta 0.10.0 -->
+  <table class="cl-wrapper">
+    <tr class="cl-wrapper-title"><th>0.10.0</th></tr>
+    <tr class="cl-wrapper-content"><td><ul>
+      <li>修復了一些 bug</li>
+      <li>完整了整個音樂指令</li>
+      <ul>
+        <li>使用 <code>z!music</code> 可以看到所有東西</li>
+        <li>目前已有近乎所有基本音樂功能</li>
+        <li>剩下部分小功能會陸續補齊</li>
+      </ul>
+    </ul></td></tr>
+  </table>
+  </div>
+
+  <h2>beta 0.9.x</h2>
+  <h2>beta 0.8.x</h2>
+  <h2>beta 0.7.x</h2>
+  <h2>beta 0.6.x</h2>
+  <h2>beta 0.5.x</h2>
+  <h2>beta 0.4.x</h2>
+  <h2>beta 0.3.x</h2>
+  <h2>beta 0.2.x</h2>
+  <h2>beta 0.1.x</h2>
+  <h2>beta 0.0.x</h2>
 </body>
 </html>
