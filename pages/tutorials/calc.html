@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="HiZollo Dev Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <a href="/?page=tutorials" target="_parent"><<< 回上頁</a>
+  <h1><code>z!calc</code> 的進階用法</h1>
+  <h2>基本用處</h2>
+  <code>z!calc</code> 允許你將一整串的算式當作參數送給 HiZollo 並幫你算出結果。以下是幾個基本運算符號：<ul>
+    <li><code>+</code>：加號</li>
+    <li><code>-</code>：減號</li>
+    <li><code>*</code>：乘號</li>
+    <li><code>/</code>：除號</li>
+    <li><code>%</code>：求餘數</li>
+    <li><code>**</code>：次方</li>
+  </ul><strong>注意：次方是 <code>**</code> 而不是 <code>^</code>，那個符號有著另外的意思！</strong><br />
+  所以你可以如下圖這般輸入：
+  <img src="./pic/calc1.png" />
+  <h2>位元運算</h2>
+  你可以使用位元運算的符號讓 HiZollo 為你進行位元運算，包含以下這些：<ul>
+    <li><code>&</code>：邏輯且</li>
+    <li><code>|</code>：邏輯或</li>
+    <li><code>^</code>：邏輯互斥</li>
+    <li><code>&lt;&lt;</code>：左移</li>
+    <li><code>&gt;&gt;</code>：右移</li>
+  </ul>也就是說，你可以這樣做：
+  <img src="./pic/calc2.png" />
+  <h2>邏輯運算</h2>
+  HiZollo 也可以為你進行複雜的邏輯運算，像是以下這些：<ul>
+    <li><code>&lt;</code>：小於</li>
+    <li><code>&gt;</code>：大於</li>
+    <li><code>&lt;=</code>：小於等於</li>
+    <li><code>&gt;=</code>：大於等於</li>
+    <li><code>==</code>：等於</li>
+    <li><code>&&</code>：邏輯且</li>
+    <li><code>||</code>：邏輯或</li>
+  </ul>也就是說，你可以這樣做：
+  <img src="./pic/calc3.png" />
+  <h2>多進位制運算</h2>
+  在 HiZollo 的 calc 指令中，你除了使用十進位制以外，也能使用二、八、十六進位。在這個時候，你必須為那些數字加上前綴，以區別他是什麼進位：<ul>
+    <li><code>0b</code>：二進位</li>
+    <li><code>0</code>：八進位</li>
+    <li><code>0x</code>：十六進位</li>
+  </ul>下面是使用各種進位制的範例：
+  <img src="./pic/calc4.png" />
+  <h2>特殊數字及函數</h2>
+  HiZollo 是能夠計算特殊的函數的，同時也有內建常數。請參考以下對照表：<ul>
+    <li><code>Math.E</code>：自然對數的底</li>
+    <li><code>Math.PI</code>：圓周率</li>
+    <li><code>Math.sin()</code>、<code>Math.cos()</code>、<code>Math.tan()</code>：三角函數</li>
+    <li><code>Math.asin()</code>、<code>Math.acos()</code>、<code>Math.atan()</code>：反三角函數</li>
+    <li><code>Math.sinh()</code>、<code>Math.cosh()</code>、<code>Math.tanh()</code>：雙曲函數</li>
+    <li><code>Math.asinh()</code>、<code>Math.acosh()</code>、<code>Math.atanh()</code>：反雙曲函數</li>
+    <li><code>Math.log()</code>、<code>Math.log2()</code>、<code>Math.log10()</code>：對數函數</li>
+    <li><code>Math.sqrt()</code>、<code>Math.cbrt()</code>：平方根、立方根</li>
+    <li><code>Math.floor()</code>、<code>Math.ceil()</code>、<code>Math.round()</code>：向下取整、向上取整、四捨五入至整數</li>
+    <li><code>Math.abs()</code>：絕對值</li>
+  </ul>只要在上面函數的小括號中放入要的值就好了，但請注意三角函數接受的單位是「弧度」而非角度，反三角函數回傳的也是弧度<br />
+  此外這些並沒有涵蓋全部，<a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">這裡</a>列出的才是全部的函數，
+  這裡只是列出比較常用的。
+  以下為示範用法：
+  <img src="./pic/calc5.png" />
+  <h2>陣列與字串處理</h2>
+  JavaScript 相關的陣列及字串處理都能使用，這些由於資訊過多，不再本教程範圍內。
+  <h2>合併使用</h2>
+  上面所提及的所有方法都能放在同一算式中使用，同時也沒有 100% 涵蓋所有使用範圍（但算涵蓋常用範圍了）。<br />
+  若你熟悉 JavaScript 的話，應該能更高的觸碰它的極限。
+  <hr />
+  <table class="tutorial-nav">
+    <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
+    <tr><td class="tutorial-nav-category">基本</td><td>
+      <a href="/?page=tutorials&tutorial=invite" target="_parent">邀請 HiZollo </a>・
+      <a href="/?page=tutorials&tutorial=cmds" target="_parent">指令清單及一般指令</a>・
+      <a href="/?page=tutorials&tutorial=help" target="_parent">指令用法的查詢</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">進階</td><td>
+      <a href="/?page=tutorials&tutorial=subcmds" target="_parent">子指令</a>・
+      <a href="/?page=tutorials&tutorial=aliases" target="_parent">指令別名</a>・
+      <a href="/?page=tutorials&tutorial=shortcuts" target="_parent">子指令快速用法</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">特殊</td><td>
+      <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
+      <strong><code>z!calc</code> 的進階用法</strong>・
+      <a href="/?page=tutorials&tutorial=server" target="_parent">支援伺服器</a>
+    </td></tr>
+  </table>
+</body>
+</html>

@@ -14,7 +14,7 @@
   我們不是生下來就會用 HiZollo 的，對吧？所以有不會使用的指令是很正常的。
   那當有不會使用的指令時，除了盲目的亂試，更好的方法就是使用 HiZollo 提供的功能直接查詢！<br />
   查詢的方法非常簡單，只要使用我們<a href="/?page=tutorials&tutorial=cmds" target="_parent">上一節</a>查看清單的 help 指令就好了。
-  上一節我們是直接使用 <code>z!help</code> 查看整個清單，但這個指令也可以附上參數。只要將指令的名稱當作參數附上
+  上一節我們是直接使用 <code>z!help</code> 查看整個清單，但這個指令也可以附上參數。只要將指令的名稱當作參數附上，就能查詢該指令的用法。
   例如我們來查詢 guildrop 指令的用法：
   <img src="./pic/help1.png" />
   你可以看到結果一共分成了幾個部分：<ul>
@@ -23,20 +23,21 @@
     <li>使用方式</li>
     <li>替代用法</li>
     <li>冷卻時間</li>
-  </ul>其中最上面兩個是每個指令都一定會有的，但「使用方法」、「替代用法」和「冷卻時間」不是每個指令都會有，所以不一定會寫。<br />
+  </ul>其中最上面兩個是每個指令都一定會有的，但「使用方式」、「替代用法」和「冷卻時間」不是每個指令都會有，所以不一定會寫。<br />
   當一個指令沒有顯示使用方法時，就代表他只有最基本的使用方式，不用附上參數什麼，其他則是沒有顯示那區塊就代表沒有。<br />
   所以使用 <code>z!help</code> 可以很快速且有效的了解一個指令在做什麼，以及怎麼使用，還有更多詳細資訊。
-  <h2>閱讀使用方法</h2>
-  但是，這個使用方法有時候看起來很複雜，像是 addrole 指令，或是上一節作為示範的 choose 指令，在使用方法上都有著各種括號：
+  <h2>閱讀使用方式</h2>
+  但是，這個使用方式有時候看起來很複雜，像是 addrole 指令，或是上一節作為示範的 choose 指令，在使用方式上都有著各種括號：
   <img src="./pic/help2.png" />
-  這個括號其實代表的是參數位置，表示每個位置要填什麼。舉例來說上面的 addrole 告訴你，是使用<br />
-  　　<code>z!addrole <span class="dc-mention">@Player</span> 管理員</code><br />而不是<br />
-  　　<code>z!addrole 管理員 <span class="dc-mention">@Player</span></code><br />
+  這個括號其實代表的是參數位置，表示每個位置要填什麼。舉例來說上面的 addrole 告訴你，是使用
+  <span class="code-block">z!addrole <span class="dc-mention">@Player</span> 管理員</span>而不是
+  <span class="code-block">z!addrole 管理員 <span class="dc-mention">@Player</span></span>
   而括號中的那一條線 <code>|</code> 的意思是說，你可以從這之中（直線隔開的那幾個選項）選一個填入這格就好，
   像是上面的 addrole，最後一格除了填入身份組名稱，也能填入身份組 ID。<br />
   而中括號（<code>[]</code>）跟角括號（<code>&lt;&gt;</code>）代表的意思幾乎是一樣的，都只是用來標示參數的順序跟位置，
   唯一的差別是，使用中括號的參數是<strong>必填</strong>，而角括號則是<strong>不必填</strong>的。
-  在使用方法中看到看到中括號即表示那個位置是一定得填入，而角括號則不然，可以自由選擇。
+  在使用方法中看到看到中括號即表示那個位置是一定得填入，而角括號則不然，可以自由選擇。<br />
+  有個非常常見的錯誤是：填入參數時將括號一同填入，請不要這麼做，括號只是用來標示位置的。
   <hr />
   <table class="tutorial-nav non-content">
     <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
