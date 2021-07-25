@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="HiZollo Dev Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <a href="/?page=tutorials" target="_parent"><<< 回上頁</a>
+  <h1>指令別名</h1>
+  <h2>一般指令</h2>
+  當你在使用 <code>z!help</code> 觀看指令時，有些指令你會看到「替代用法」：
+  <img src="./pic/aliases1.png" />
+  這個替代用法就是指令的別名，通常會比原本的名稱短，讓你可以更快速、方便的使用 HiZollo 的指令，而不用輸入一長串的名字。
+  舉例來說，這個 calc 指令，除了使用 <code>z!calc</code> 以外，你也能使用 <code>z!c</code> 來做使用：
+  <img src="./pic/aliases2.png" />
+  <h2>子指令</h2>
+  子指令跟子指令管轄者也有可能會有別名，而且都會列在子指令清單上，如下方：
+  <img src="./pic/aliases3.png" />
+  可以看到，子指令管轄者 osu 的別名是 o，所以你也可以使用 <code>z!o</code> 來呼叫他。而其下的 user 指令有個替代用法 u，
+  所以當你使用 osu 的 user 指令時，總共可以有以下幾種方式：<ul>
+    <li><code>z!osu user chocomint</code></li>
+    <li><code>z!osu u chocomint</code></li>
+    <li><code>z!o user chocomint</code></li>
+    <li><code>z!o u chocomint</code></li>
+  </ul>
+  這些用法都是合法的，出來的結果也都是一樣的。你可以在管轄者那邊使用別名，也能在子指令那邊使用別名，當然也能同時使用，
+  這將減低使用子指令時，要輸入很多東西的負擔。
+  <hr />
+  <table class="tutorial-nav">
+    <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
+    <tr><td class="tutorial-nav-category">基本</td><td>
+      <a href="/?page=tutorials&tutorial=invite" target="_parent">邀請 HiZollo </a>・
+      <a href="/?page=tutorials&tutorial=cmds" target="_parent">指令清單及一般指令</a>・
+      <a href="/?page=tutorials&tutorial=help" target="_parent">指令用法的查詢</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">進階</td><td>
+      <a href="/?page=tutorials&tutorial=subcmds" target="_parent">子指令</a>・
+      <strong>指令別名</strong>・
+      <a href="/?page=tutorials&tutorial=shortcuts" target="_parent">子指令快速用法</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">特殊</td><td>
+      <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
+      <a href="/?page=tutorials&tutorial=calc" target="_parent"><code>z!calc</code> 的進階用法</a>・
+      <a href="/?page=tutorials&tutorial=server" target="_parent">支援伺服器</a>
+    </td></tr>
+  </table>
+</body>
+</html>

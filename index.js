@@ -25,15 +25,18 @@ const request = paras => {
 $(document).ready(() => {
   let page = request('page');
   const subcmd = request('subcmd');
+  const tutorial = request('tutorial');
   if (page === '') page = 'mp';
 
   if(page === 'cmds' && subcmd !== '') {
     loadPage(`pages/subcmds/${subcmd}.html`);
+  } else if (page === 'tutorials' && tutorial !== '') {
+    loadPage(`pages/tutorials/${tutorial}.html`)
   } else {
     loadPage(`pages/${page}.html`);
   }
 
   $("#switch").click(function () {
-    $("#nav").animate({opacity: 'toggle'}, 500);
+    $("#nav").animate({width: 'toggle'}, 500);
   });
 });

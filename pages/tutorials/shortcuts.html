@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="HiZollo Dev Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <a href="/?page=tutorials" target="_parent"><<< 回上頁</a>
+  <h1>子指令快速用法</h1>
+  <h2>使用快速用法</h2>
+  雖然有<a href="/?page=tutorials&tutorial=aliases" target="_parent">上一章</a>的指令別名，但子指令的使用仍稍嫌不方便，
+  因此我們引進了「子指令快速用法」，可以讓你像使用一般指令一樣使用子指令。<br />
+  我們先來看一下<a href="/?page=cmds&subcmd=music" target="_parent">音樂指令清單</a>：
+  <img src="./pic/shortcuts1.png" />
+  正常來講必須使用 <code>z!m join</code> 才能使用 music 的 join 指令，但子指令快速用法允許你直接使用 <code>z!join</code> 來執行
+  <img src="./pic/shortcuts2.png" />
+  <h2>原理</h2>
+  讓我們看看當你在執行 <code>z!join</code> 時，HiZollo 到底做了什麼：首先他看到你執行了 join 指令，便去他的指令庫尋找 join 指令，
+  但是他找不到，這時他會去找所有的子指令管轄者，詢問這些管轄者他們有沒有子指令叫做 join？
+  而 music 有，於是 HiZollo 就把指令轉交給 music 處理，也就等同於執行 <code>z!music join</code>。<br />
+  同理，你也可以使用 <code>z!best</code> 去執行 osu 的 best 指令。
+  <h2>別名適用原則</h2>
+  使用快速用法時，是可以使用子指令的別名的。舉例來說 osu 的 best 指令，有個別名叫做 bp，所以你也可以直接使用 <code>z!bp</code> 來執行這個指令。
+  <img src="./pic/shortcuts3.png" />
+  <h2>主指令優先原則</h2>
+  當子指令的快速用法剛好跟某個主指令的用法相同時，將會執行主指令，而非去執行該子指令。例如 diep 的 server 指令和 server 指令是同名的，
+  所以當你執行 <code>z!server</code> 時，他會執行主指令中的 server 指令，而非 diep 的 server 指令。
+  <img src="./pic/shortcuts4.png" />
+  但是，diep 的 server 指令有個別名叫做 discord，所以如果你使用 <code>z!discord</code> 的話，因為沒有叫做 discord 的主指令，
+  所以他就會去執行 diep 的 server 指令。
+  <img src="./pic/shortcuts5.png" />
+  <h2>撞名時的處理</h2>
+  若今天有兩個子指令管轄者，他們剛好有同名的子指令，這時當你使用該子指令的 shortcut 時，HiZollo 會跳出一個清單問你要執行哪個管轄者的子指令。
+  選擇後 HiZollo 便會執行選擇的那個子指令。
+  <h2><code>z!help</code> 查不到</h2>
+  當你使用像是 <code>z!help play</code>，他會告訴你那個指令不存在。這是因為 HiZollo 並沒有 play 指令，只有 music 這個子指令管轄者有。
+  所謂 <code>z!play</code> 這個 play 並不是他的正式名稱，只是一個簡短的用法，並不能取代原本的名稱，
+  這點跟<a href="/?page=tutorials&tutorial=aliases" target="_parent">別名</a>是不一樣的。
+  <hr />
+  <table class="tutorial-nav">
+    <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
+    <tr><td class="tutorial-nav-category">基本</td><td>
+      <a href="/?page=tutorials&tutorial=invite" target="_parent">邀請 HiZollo </a>・
+      <a href="/?page=tutorials&tutorial=cmds" target="_parent">指令清單及一般指令</a>・
+      <a href="/?page=tutorials&tutorial=help" target="_parent">指令用法的查詢</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">進階</td><td>
+      <a href="/?page=tutorials&tutorial=subcmds" target="_parent">子指令</a>・
+      <a href="/?page=tutorials&tutorial=aliases" target="_parent">指令別名</a>・
+      <strong>子指令快速用法</strong>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">特殊</td><td>
+      <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
+      <a href="/?page=tutorials&tutorial=calc" target="_parent"><code>z!calc</code> 的進階用法</a>・
+      <a href="/?page=tutorials&tutorial=server" target="_parent">支援伺服器</a>
+    </td></tr>
+  </table>
+</body>
+</html>

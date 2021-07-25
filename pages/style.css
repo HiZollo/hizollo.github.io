@@ -56,6 +56,27 @@ table.devimg {
   text-align: center;
 }
 
+.dev-lead-team {
+  color: rgb(101, 124, 137);
+}
+
+.dev-code-team {
+  color: rgb(230, 126, 34);
+}
+
+.dev-art-team {
+  color: rgb(233, 30, 99);
+}
+
+.dev-web-team {
+  color: rgb(52, 152, 219);
+}
+
+.dev-test-team {
+  color:rgb(46, 204, 113);
+}
+
+
 .helplist-title {
   margin-top: 25px;
   margin-bottom: 10px;
@@ -91,6 +112,7 @@ table.devimg {
 .dc-mention {
   display:inline-block;
   cursor: pointer;
+  line-height: 20px;
   font-family: Helvetica Arial;
   font-size: 14px;
   padding: 2px 1px;
@@ -154,8 +176,28 @@ iframe {
   padding-top: 10px;
 }
 
-.cl-wrapper-content td ul li {
+.cl-wrapper-content li {
   padding: 4px;
+}
+
+.tutorial-nav {
+  width: 75vw;
+  border: black 1px solid;
+  border-collapse: collapse;
+}
+
+.tutorial-nav td, .tutorial-nav th {
+  border: black 1px solid;
+  padding: 5px;
+  text-align: center;
+}
+
+.tutorial-nav-category {
+  width: 30%;
+}
+
+.non-content {
+  margin-top: 30px;
 }
 
 table.devimg:hover, .event-link:hover {
@@ -175,6 +217,9 @@ table.devimg:hover, .event-link:hover {
 @media (max-width: 480px) {
   iframe {
     width:300px;
+  }
+  .tutorial-nav {
+    margin: 0px auto;
   }
   .helplist-table tr:first-child td:nth-child(1) {
     width: 16%;
