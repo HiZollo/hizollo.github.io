@@ -3,7 +3,7 @@ const loadPage = file => {
 }
 
 const popWindow = file => {
-  window.open (file, 'pop', 'height=100, width=400, top=250, left=550, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+  window.open (file, 'pop', 'height=250, width=500, top=250, left=550, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
 }
 
 const request = paras => {
