@@ -148,7 +148,7 @@ iframe {
   display: inline-block;
 }
 
-.cl-wrapper-content td strong {
+.cl-wrapper-content td .cl-wrapper-date {
   display: inline-block;
   padding-left: 20px;
   padding-top: 10px;
