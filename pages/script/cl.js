@@ -8,7 +8,7 @@ $(document).ready(() => {
   $(".dc-spoiler").click(function() {
     $(this).css({
       "background-color": "#E5E5E5",
-      "cursor": "default"
+      "cursor": "text"
     });
   })
 });
