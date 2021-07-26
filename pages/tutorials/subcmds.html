@@ -9,27 +9,23 @@
 </head>
 <body>
   <a href="/?page=tutorials" target="_parent"><<< 回上頁</a>
-  <h1>子指令</h1>
-  <h2>何為子指令</h2>
-  想想 HiZollo 提供了非常多功能，不可免的會有一群很類似性質的功能，同時再好幾群類似性質的東西可能會剛好有東西再每個群之中都有。
-  這時如果把它設計成一般指令，就得在名稱之類的地方下非常多的功夫，那顯然我們寧願花上更多時間在優化及提供功能上，而非命名。
-  所以，我們設計了一個有著分類概念的東西——子指令。<br />
-  每個子指令都會有一個管轄者，這些管轄者都會列在<a href="/?page=cmds" target="_parent">指令列表</a>中的「子分類」分類中。
-  像是 <code>z!diep</code> 即為一個子指令管轄者。每個子指令管轄者都會管著一個以上的子指令。若你直接把子指令管轄者當作指令執行，就能看到子指令列表：
+  <h1>指令群</h1>
+  <h2>什麼是指令群</h2>
+  想想 HiZollo 提供了這麼多功能，難免會有一群性質相似的指令，因此，我們設計出了指令群，用來將這些相似的指令歸類。<br />
+  每個指令群都會有它的群組名稱，以及若干個群組指令，你可以在<a href="/?page=cmds" target="_parent">指令列表</a>中的「指令群」分類中查看所有指令群。
+  像是 <code>z!diep</code> 就是 diep 指令群，執行這個指令時除了要先輸入前綴 <code>z!</code> 以外，還要額外加群組名稱，變成 <code>z!diep</code>。如果你直接把這串文字當成指令送出，就能看到這個群組指令的列表：
   <img src="./pic/subcmds1.png" />
-  這個列表也能在<a href="/?page=cmds" target="_parent">指令列表</a>子指令分類的介紹中點擊連結看到，
-  例如 Diep.io 指令列表就可以在<a href="/?page=cmds&subcmd=diep" target="_parent">這個頁面</a>看到。
-  <h2>執行子指令</h2>
-  子指令的執行就像一般指令一樣，只是執行時要在前方加上其管轄者的名稱，我們用 diep 下的 fact 指令來做示範好了。
-  指令的名稱是是 fact，而他的管轄者是 diep，所以只要執行 <code>z!diep fact</code> 就可以了，
-  看起來就像把子指令的名稱當作參數給管轄者：
+  你也可以在<a href="/?page=cmds" target="_parent">指令列表</a>中，「指令群」分類的介紹中點擊連結查看群組指令列表，例如 diep 群組指令列表就可以在<a href="/?page=cmds&subcmd=diep" target="_parent">這個頁面</a>看到。
+  <h2>執行群組指令</h2>
+  群組指令的執行就像一般指令一樣，只是執行時要在前方加上群組名稱，接下來我們將用 diep 下的 fact 指令來做示範。這個群組的名稱是 diep，而群組指令的名稱是 fact，所以只要執行 <code>z!diep fact</code> 就可以了。<br />
+  以實際使用情況來說，看起來就像把群組指令的名稱當作參數給 diep 指令：
   <img src="./pic/subcmds2.png" />
-  這樣就成功地執行子指令了！<br />
+  這樣就成功地執行群組指令了！<br />
   <br />
-  有些子指令是需要附上參數的，比如説 diep 的 tank，這時的做法跟我們之前執行一般指令可說是一模一樣。
-  子指令的基本執行模式是 <code>z!diep tank</code>，然後在這後面以空格區分加上參數就好了，結果如下：
+  有些群組指令也是需要附上參數的，比如說 diep 的 tank，這時的做法跟我們之前執行一般指令可說是一模一樣。
+  群組指令的基本執行模式是 <code>z!diep tank</code>，然後在這後面以空格區分加上參數就好了，使用範例如下：
   <img src="./pic/subcmds3.png" />
-  這樣就成功執行帶有參數的子指令了！
+  這樣就成功執行帶有參數的群組指令了！
   <hr />
   <table class="tutorial-nav non-content">
     <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
@@ -39,9 +35,9 @@
       <a href="/?page=tutorials&tutorial=help" target="_parent">指令用法的查詢</a>
     </td></tr>
     <tr><td class="tutorial-nav-category">進階</td><td>
-      <strong>子指令</strong>・
+      <strong>指令群</strong>・
       <a href="/?page=tutorials&tutorial=aliases" target="_parent">指令別名</a>・
-      <a href="/?page=tutorials&tutorial=shortcuts" target="_parent">子指令快速用法</a>
+      <a href="/?page=tutorials&tutorial=shortcuts" target="_parent">群組指令捷徑</a>
     </td></tr>
     <tr><td class="tutorial-nav-category">特殊</td><td>
       <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
