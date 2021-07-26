@@ -208,9 +208,12 @@ table.devimg:hover, .event-link:hover {
   border-left: 1px #848484 solid;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 617px) {
   h2, .cl-wrapper-title th {
     text-align: center;
+  }
+  .dev-table {
+    justify-content: center;
   }
 }
 

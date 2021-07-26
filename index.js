@@ -37,6 +37,8 @@ $(document).ready(() => {
   }
 
   $("#switch").click(function () {
-    $("#nav").animate({width: 'toggle'}, 500);
+    $("#nav").animate({
+      width: ['toggle', 'linear']
+    }, 250);
   });
 });
