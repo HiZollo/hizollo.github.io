@@ -31,10 +31,10 @@ h2 {
   border-top: 1px black solid;
 }
 
-table.devimg {
+.devimg {
   width:190px;
   margin: 5px;
-  background: #DFE8E1;
+  cursor: pointer;
   position: relative;
 }
 
@@ -60,20 +60,40 @@ table.devimg {
   color: rgb(101, 124, 137);
 }
 
+.dev-lead-team + div .devimg {
+  background-color: rgb(131, 154, 167);
+}
+
 .dev-code-team {
   color: rgb(230, 126, 34);
+}
+
+.dev-code-team + div .devimg {
+  background-color: rgb(255, 157, 90);
 }
 
 .dev-art-team {
   color: rgb(233, 30, 99);
 }
 
+.dev-art-team + div .devimg {
+  background-color: rgb(255, 95, 149);
+}
+
 .dev-web-team {
   color: rgb(52, 152, 219);
 }
 
+.dev-web-team + div .devimg {
+  background-color: rgb(72, 172, 239);
+}
+
 .dev-test-team {
-  color:rgb(46, 204, 113);
+  color: rgb(46, 204, 113);
+}
+
+.dev-test-team + div .devimg {
+  background-color: rgb(36, 194, 103);
 }
 
 

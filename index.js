@@ -26,12 +26,15 @@ $(document).ready(() => {
   let page = request('page');
   const subcmd = request('subcmd');
   const tutorial = request('tutorial');
-  if (page === '') page = 'mp';
 
   if(page === 'cmds' && subcmd !== '') {
     loadPage(`pages/subcmds/${subcmd}.html`);
   } else if (page === 'tutorials' && tutorial !== '') {
     loadPage(`pages/tutorials/${tutorial}.html`)
+  } else if (page === '') {
+    const user = request('user');
+    if (user !== '') loadPage(`pages/users/${user}.html`);
+    else loadPage(`pages/mp.html`);
   } else {
     loadPage(`pages/${page}.html`);
   }
