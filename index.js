@@ -1,5 +1,6 @@
 const loadPage = file => {
-  document.getElementById('frame').src = `${file}#top`;
+  const frame = document.getElementById('frame');
+  frame.src = `${file}#top`;
 }
 
 const popWindow = file => {
