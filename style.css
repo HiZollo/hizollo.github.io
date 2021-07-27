@@ -1,3 +1,7 @@
+:root {
+  --nav-height: 30px;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -99,13 +103,28 @@ header {
 }
 
 .nav-link {
-  display: block;
+  height: calc(var(--nav-height) + 4px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   white-space: pre;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-left: 27px;
 }
 
-.nav-link a {
+.nav-link-icon img {
+  height: var(--nav-height);
+}
+
+.nav-link-icon {
+  height: var(--nav-height);
+}
+
+.nav-link-text {
+  line-height: calc(var(--nav-height) + 4px);
+}
+
+#nav a {
   text-decoration: none;
   color: #6A7575;
 }
