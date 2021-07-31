@@ -8,10 +8,6 @@ img {
   width: 400px;
 }
 
-.tutorial-nav a, .tutorial-nav strong {
-  white-space: nowrap;
-}
-
 .code-block {
   display: block;
   background-color: #F2F2F2;

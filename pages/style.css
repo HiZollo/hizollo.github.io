@@ -212,12 +212,36 @@ iframe {
   text-align: center;
 }
 
+.tutorial-nav a, .tutorial-nav strong {
+  white-space: nowrap;
+}
+
 .tutorial-nav-category {
   width: 30%;
 }
 
 .non-content {
   margin-top: 30px;
+}
+
+#tos-icon {
+  display: inline-block;
+  width: 40px;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.displaynone {
+  display: none;
+}
+
+.mirror {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 table.devimg:hover, .event-link:hover {
