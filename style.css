@@ -167,8 +167,8 @@ header {
   }
 }
 
-@media (max-width: 640px) {
-  .width-640-only {
+@media (max-width: 643px) {
+  .width-643-only {
     display: none;
   }
 }
@@ -182,11 +182,11 @@ header {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 573px) {
   .pc-only {
     display: none;
   }
-  .width-640-only {
+  .width-643-only {
     display: inline-block;
   }
   :root {
