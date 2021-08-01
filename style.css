@@ -182,7 +182,7 @@ header {
   }
 }
 
-@media (max-width: 573px) {
+@media (max-width: 581px) {
   .pc-only {
     display: none;
   }
