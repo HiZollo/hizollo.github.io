@@ -43,14 +43,4 @@ $(document).ready(() => {
       width: ['toggle', 'linear']
     }, 250);
   });
-
-  $(".nav-link-icon-tos").click(function () {
-      $(this).css({
-        '-webkit-transform' : 'scaleX(-1)',
-        '-moz-transform'    : 'scaleX(-1)',
-        '-ms-transform'     : 'scaleX(-1)',
-        '-o-transform'      : 'scaleX(-1)',
-        'transform'         : 'scaleX(-1)'
-      });
-  });
 });
