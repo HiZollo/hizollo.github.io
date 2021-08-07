@@ -1,0 +1,28 @@
+html {
+  width: 100%;
+}
+
+body {
+  margin-left: 2%;
+  height: 900vh;
+  width: 95%;
+  overflow-x: hidden;
+  font-family: 'Helvetica', 'Arial';
+}
+
+a {
+  text-decoration: none;
+  color: #2A7A97;
+}
+
+a:active {
+  color: #35AB4D;
+}
+
+#second, #input, #output, #third, #fourth {
+  display: none;
+}
+
+#output {
+  font-weight: bold;
+}
