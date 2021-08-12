@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="HiZollo Dev Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <a href="/?page=tutorials" target="_parent"><<< 回上頁</a>
+  <h1>HiZollo Guild Drop</h1>
+  <h2>什麼是 HiZollo Guild Drop</h2>
+  HiZollo Guild Drop，簡稱 HZ Guildrop 或 Guildrop，是 HiZollo 的特色之一。顧名思義，這個東西就是透過 HiZollo，把訊息從一個伺服器（Guild）丟到（Drop）另一個伺服器。只要加入這個聯絡網，就可以透過此功能將訊息從伺服器傳遞訊息至另外一個伺服器。
+  <h2>加入 HiZollo Guild Drop 聯絡網</h2>
+  使用 Guildrop 服務前，一定要先加入他的聯絡網才行。我們不允許你在不能接收其他人傳來的訊息下發送訊息給其他人，這是不公平的。要加入此聯絡網十分簡單，只需要建立一個名稱為 <span class="dc-mention">#hz-guildrop</span> 的頻道就好了。注意要讓 HiZollo 可以讀取且傳送訊息至此頻道。
+  <h3>額外的設定</h3>
+  當你完成後，你可以將該頻道鎖住，不讓伺服器成員能夠在這頻道傳送訊息。這樣可以讓頻道只有從其他伺服器傳來的 Guild Drop 訊息。此項設定是額外的，不會影響使用，可看個人偏好決定。
+  <h2>查看聯絡網伺服器清單</h2>
+  當你的伺服器加入之後，Guildrop 的指令才會開放讓你的伺服器使用（在此之前如果使用都會被攔下）。當你使用 <code>z!gulidrop</code> 時，他將會顯示像以下的清單：
+  <img src="./pic/guildrop1.png" />
+  這會是一個有著幾頁的清單，你可以透過下方的按鈕來進行翻頁。除最末頁以外，每頁都會顯示 8 個伺服器，其中除了最上方固定是 <a href="/?page=tutorials&tutorial=server" title="什麼是支援伺服器" target="_parent">HiZollo 後台支援伺服器</a>以外，剩下 7 個則是其他也有在聯絡網的伺服器。清單上會列著他們的名稱以及 ID。這些東西會在發送訊息時用到。
+  <h2>發送訊息</h2>
+  發送訊息一樣是使用 <code>z!guildrop</code> 指令，只是這時我們要附上目標的伺服器名稱或著伺服器 ID 作為指令的參數。如下圖：
+  <img src="./pic/guildrop2.png" />
+  接著，HiZollo 會給你 30 秒的時間，讓你輸入想要傳送的訊息。在時間到之前，你傳的第一則訊息會被傳送到你指定的目標伺服器。在傳送之後，HiZollo 會告訴你訊息已經發送完畢。
+  <img src="./pic/guildrop3.png" />
+  接著，在對方的伺服器，就會有你剛剛傳送的訊息了。
+  <img src="./pic/guildrop4.png" />
+  <h2>限制</h2>
+  Guildrop 功能雖然方便，但也容易被濫用，所以我們對其做出了以下的限制：<ul>
+    <li>最多只能傳送 400 字</li>
+    <li>所有的換行都會變成空格</li>
+    <li>Guildrop 指令有著 30 秒的冷卻時間</li>
+    <li>你只能傳送訊息給有在聯絡網內的伺服器。</li>
+  </ul>這些限制都是為了防止 Guildrop 功能成為有心人士的洗頻工具。
+  <hr />
+  <table class="tutorial-nav">
+    <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
+    <tr><td class="tutorial-nav-category">基本</td><td>
+      <a href="/?page=tutorials&tutorial=invite" target="_parent">邀請 HiZollo </a>・
+      <a href="/?page=tutorials&tutorial=cmds" target="_parent">指令清單及一般指令</a>・
+      <a href="/?page=tutorials&tutorial=help" target="_parent">指令用法的查詢</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">進階</td><td>
+      <a href="/?page=tutorials&tutorial=subcmds" target="_parent">指令群</a>・
+      <a href="/?page=tutorials&tutorial=aliases" target="_parent">指令別名</a>・
+      <a href="/?page=tutorials&tutorial=shortcuts" target="_parent">群組指令捷徑</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">特殊</td><td>
+      <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
+      <a href="/?page=tutorials&tutorial=calc" target="_parent"><code>z!calc</code> 的進階用法</a>・
+      <a href="/?page=tutorials&tutorial=server" target="_parent">支援伺服器</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">HiZollo 聯絡網</td><td>
+      <strong>HiZollo Guild Drop</strong>
+    </td></tr>
+  </table>
+</body>
+</html>
