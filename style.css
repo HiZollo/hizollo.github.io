@@ -97,9 +97,22 @@ header {
 }
 
 #nav {
-  width: 20%;
-  height: 100%;
+  width: 20vw;
+  height: 100vh;
+  border-right: 1px black solid;
+  overflow: hidden;
   position: relative;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-duration: 420ms;
+}
+
+#nav.open {
+  animation-name: open;
+}
+
+#nav.collapsed {
+  animation-name: collapsed;
 }
 
 .nav-link {
@@ -142,11 +155,22 @@ header {
 }
 
 #content-frame {
-  border-top: none;
+  border: none;
   margin: 0px auto;
   height: calc(100vh - 60px);
   width: 98%;
 }
+
+@keyframes collapsed {
+  0% { width: 20vw; }
+  100% { width: 0vw; display: none; }
+}
+
+@keyframes open {
+  0% { width: 0vw; display: block; }
+  100% { width: 20vw; }
+}
+
 
 @media (max-width: 979px) {
   .nav-link {

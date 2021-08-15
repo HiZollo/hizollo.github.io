@@ -1,5 +1,6 @@
 html {
   width: 100%;
+  height: 100%;
 }
 
 body {
@@ -168,6 +169,7 @@ iframe {
 .cl-wrapper {
   margin: 0px;
   width: 100%;
+  height: 100%;
 }
 
 .cl-wrapper + .cl-wrapper {
@@ -187,7 +189,14 @@ iframe {
 }
 
 .cl-wrapper-content {
-  display: inline-block;
+  transition: max-height 0.3s linear;
+  max-height: 0px;
+  display: block;
+  overflow: hidden;
+}
+
+.cl-wrapper-content.open {
+  max-height: fit-content;
 }
 
 .cl-wrapper-date {
