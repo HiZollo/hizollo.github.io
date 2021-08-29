@@ -19,39 +19,15 @@
       <td class="helplist-header"><strong>範例</strong></td>
     </tr>
     <tr>
-      <td><code>z!music again</code></td>
-      <td><code>-</code></td>
-      <td>將目前樂曲加入清單最上方</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td><code>z!music join</code></td>
       <td><code>-</code></td>
-      <td>加入指令使用者所在的語音頻道</td>
-      <td>-</td>
+      <td>加入指令使用者所在的語音頻道，若加入的是舞台頻道，可以額外指定 false 參數讓機器人只有播歌時成為發言者</td>
+      <td><code>z!music join</code><br /><code>z!music join false</code></td>
     </tr>
     <tr>
       <td><code>z!music leave</code></td>
       <td><code>l</code></td>
       <td>讓機器人離開語音頻道</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><code>z!music loop</code></td>
-      <td><code>-</code></td>
-      <td>讓目前歌曲開始重複播放，或是停止重複播放</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><code>z!music nowplaying</code></td>
-      <td><code>np</code></td>
-      <td>顯示目前播放的樂曲</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><code>z!music pause</code></td>
-      <td><code>-</code></td>
-      <td>暫停播放目前樂曲</td>
       <td>-</td>
     </tr>
     <tr>
@@ -67,16 +43,10 @@
       <td>-</td>
     </tr>
     <tr>
-      <td><code>z!music resume</code></td>
+      <td><code>z!music remove</code></td>
       <td><code>-</code></td>
-      <td>繼續播放已暫停的樂曲</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>z!music skip</code></td>
-      <td><code>-</code></td>
-      <td>跳過目前樂曲，也可以用來移除隊列中的歌曲</td>
-      <td valign="top"><code>z!music skip</code><br /><code>z!m skip 1</code><br /><code>z!music skip 0 5</code></td>
+      <td>移除隊列中的歌曲</td>
+      <td valign="top"><code>z!music remove</code><br /><code>z!m remove 2</code><br /><code>z!music skip 3 10</code></td>
     </tr>
   </table>
 </body>
