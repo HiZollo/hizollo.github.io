@@ -98,20 +98,20 @@ h2 {
 }
 
 
-.helplist-title {
+.slashlist-title, .helplist-title {
   margin-top: 25px;
   margin-bottom: 10px;
 }
 
-.helplist-table {
+.slashlist-table, .helplist-table {
   width: 100%;
 }
 
-.helplist-table td {
+.slashlist-table td, .helplist-table td {
   padding: 3.5px;
 }
 
-.helplist-header {
+.slashlist-header, .helplist-header {
   border-bottom: #7777FF 3px solid;
   font-size: 15px;
   color: #2222BB;
@@ -128,6 +128,14 @@ h2 {
 }
 .helplist-table tr:first-child td:nth-child(4) {
   width: 36%;
+}
+
+.slashlist-table tr:first-child td:nth-child(1) {
+  width: 30%;
+}
+
+.slashlist-table tr:first-child td:nth-child(2) {
+  width: 70%;
 }
 
 .dc-mention {
