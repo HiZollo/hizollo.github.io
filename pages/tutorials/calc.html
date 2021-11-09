@@ -67,6 +67,15 @@
   JavaScript 相關的陣列及字串處理都能使用，由於相關的資訊過多，本教程就不特別說明了。
   <h2>合併使用</h2>
   上面所提及的所有方法都能互相搭配使用，雖然這無法涵蓋所有的數學運算，但在常用範圍內這些就足夠了。
+  <h2>禁用詞</h2>
+  <code>calc</code> 的功能十分強大，甚至是可以透過 <code>calc</code> 直接操控 HiZollo 本身及其運作主機的。為此，我們限制了許多字詞來避免使用者干擾到 HiZollo 本身的運作。這些字詞包含：
+  <ul>
+    <li><code>const</code>、<code>let</code>、<code>var</code></li>
+    <li><code>for</code>、<code>while</code></li>
+    <li><code>this</code>、<code>process</code></li>
+    <li>包含 <code>setTimeout</code> 在內的的所有 <code>global</code> 變數的索引</li>
+  </ul>
+  如果你發現有任何危險的字詞不小心被遺漏了，請加入<a href="/server" target="_blank">支援伺服器</a>回報以協助我們改進，感謝。
   <hr />
   <table class="tutorial-nav">
     <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
@@ -84,6 +93,11 @@
       <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
       <strong><code>z!calc</code> 的進階用法</strong>・
       <a href="/?page=tutorials&tutorial=server" target="_parent">支援伺服器</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">斜線指令</td><td>
+      <a href="/?page=tutorials&tutorial=slash_start" target="_parent">開始使用</a>・
+      <a href="/?page=tutorials&tutorial=slash_use" target="_parent">指令用法的查詢</a>・
+      <a href="/?page=tutorials&tutorial=slash_z" target="_parent">斜線Ｚ指令</a>
     </td></tr>
     <tr><td class="tutorial-nav-category">HiZollo 聯絡網</td><td>
       <a href="/?page=tutorials&tutorial=guildrop" target="_parent">HiZollo Guild Drop</a>

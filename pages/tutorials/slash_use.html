@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="HiZollo Dev Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <a href="/?page=tutorials" target="_parent"><<< 回上頁</a>
+  <h1>指令用法的查詢</h1>
+  <h2>斜線指令 vs 訊息指令</h2>
+  斜線指令與訊息指令（<code>z!</code>）是完全不同的東西。在<a href="/?page=tutorials&tutorial=help" target="_parent">訊息指令的介紹中</a>，我們直接推薦你使用 <code>z!help</code> 指令查詢，因為訊息指令十分難一次猜中他的使用方式。<br />
+  但斜線指令就不一樣了，Discord 會將選項一一羅列給你進行填寫，即使順序有問題也沒關係，且也不用擔心必填選項沒填到或是填錯格式等問題，只要有錯誤，你的指令就不被允許被送出。因此對於斜線指令，是可以透過指令跟選項的名稱、介紹來直接判斷怎麼使用的，相對於訊息指令方便很多。<br />
+  但即使如此，還是會有人不會使用，所以我們提供了此教學文件以及 <code>z!help</code> 的斜線版指令：<code>/help</code>
+  <h2>用法</h2>
+  <code>/help</code> 的用法就跟訊息版幾乎是一模一樣，他帶有一個選填的選項：
+  <img src="./pic/slash_use1.png" />
+  這個選項正是要填入指令名稱，只要將想要查詢的指令名稱傳進去就好了。<strong>注意：指令名稱是指 / 後面的那個，不包含 / 本身。</strong>
+  <img src="./pic/slash_use2.png" />
+  讓我們填入一個指令的名稱並送出看看：
+  <img src="./pic/slash_use3.png" />
+  可以看到，他跟<a href="/?page=tutorials&tutorial=help" target="_parent">訊息指令版</a>長得有點像，但又不完全一樣。相同的地方有
+  <ul>
+    <li>指令名稱</li>
+    <li>指令說明</li>
+    <li>分類位置</li>
+    <li>冷卻時間</li>
+  </ul>
+  這些內容與訊息指令的都一模一樣。而不同的是使用方式中多了「選項說明」。一樣我們使用方括號（<code>[]</code>）表示必填，角括號（<code>&lt;&gt;</code>）表示非必填。而下面會詳細的講解這個選項的規範內容以及對選項的簡短說明。規範內容是指，這個選項只能填入的類別，例如字串就是所有東西都能填，但如果是數字的話就代表你只能填入數字，任何其他的都會被拒絕。而簡短說明則是你可以在填選項時看到的說明，幫助你更加了解這些選項的作用。<br />
+  當你有辦法讀懂這些時，你就成功學會了怎麼查詢斜線指令的用法了。
+  <hr />
+  <table class="tutorial-nav">
+    <tr><th class="tutorial-nav-category">分類</th><th>內容</th></tr>
+    <tr><td class="tutorial-nav-category">基本</td><td>
+      <a href="/?page=tutorials&tutorial=invite" target="_parent">邀請 HiZollo </a>・
+      <a href="/?page=tutorials&tutorial=cmds" target="_parent">指令清單及一般指令</a>・
+      <a href="/?page=tutorials&tutorial=help" target="_parent">指令用法的查詢</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">進階</td><td>
+      <a href="/?page=tutorials&tutorial=subcmds" target="_parent">指令群</a>・
+      <a href="/?page=tutorials&tutorial=aliases" target="_parent">指令別名</a>・
+      <a href="/?page=tutorials&tutorial=shortcuts" target="_parent">群組指令捷徑</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">特殊</td><td>
+      <a href="/?page=tutorials&tutorial=hd" target="_parent">隱藏指令</a>・
+      <a href="/?page=tutorials&tutorial=calc" target="_parent"><code>z!calc</code> 的進階用法</a>・
+      <a href="/?page=tutorials&tutorial=server" target="_parent">支援伺服器</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">斜線指令</td><td>
+      <a href="/?page=tutorials&tutorial=slash_start" target="_parent">開始使用</a>・
+      <strong>指令用法的查詢</strong>・
+      <a href="/?page=tutorials&tutorial=slash_z" target="_parent">斜線Ｚ指令</a>
+    </td></tr>
+    <tr><td class="tutorial-nav-category">HiZollo 聯絡網</td><td>
+      <a href="/?page=tutorials&tutorial=guildrop" target="_parent">HiZollo Guild Drop</a>
+    </td></tr>
+  </table>
+</body>
+</html>
