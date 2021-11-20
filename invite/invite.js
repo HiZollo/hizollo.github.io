@@ -6,6 +6,8 @@ for (const str of paraString) {
   requests[str.substring(0, index).toLowerCase()] = str.substring(index+1, str.length);
 }
 
-const permissions = requests.permissions ?? '4294438903';
+const clientId = requests.clientid ?? '584677291318312963';
+const permissions = requests.permissions ?? '536870383095';
+const scope = requests.scope ?? 'bot+applications.commands';
 
-location.href= `https://discord.com/api/oauth2/authorize?client_id=584677291318312963&permissions=${permissions}&scope=bot%20applications.commands`;
+location.href= `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}`;
