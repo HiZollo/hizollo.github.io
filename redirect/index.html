@@ -11,7 +11,7 @@
     }
 
     const redirect_url = requests.url ?? '/';
-    location.href = redirect_url.replace(/%hzreand/g, '&');
+    location.href = /^https?:\/\/.*/.test(redirect_url) ? redirect_url.replace(/%hzreand/g, '&') : `http://${redirect_url}`;
   </script>
 </head>
 <body>
