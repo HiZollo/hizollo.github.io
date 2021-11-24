@@ -8,7 +8,10 @@
   <meta property="og:image" content="https://hizollo.ddns.net/pic/image.png" />
   <meta name="twitter:image" content="https://hizollo.ddns.net/pic/image.png" />
   <link rel="icon" href="/pic/favicon.ico" type="image/x-icon" />
-  <script>location.href='https://discord.gg/xUXTrYG2MZ'</script>
+  <script>
+    location.href = encode('https://discord.gg/xUXTrYG2MZ');
+    function encode(url) { return url.replace(/&/g, '%hzreand') };
+  </script>
 </head>
 <body>
 Why are you looking here :thinking:
