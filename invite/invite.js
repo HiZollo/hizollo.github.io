@@ -10,4 +10,6 @@ const clientId = requests.clientid ?? '584677291318312963';
 const permissions = requests.permissions ?? '536870383095';
 const scope = requests.scope ?? 'bot+applications.commands';
 
-location.href= `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}`;
+location.href = encode(`/redirect?url=https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}`);
+
+function encode(url) { return url.replace(/&/g, '%hzreand') };

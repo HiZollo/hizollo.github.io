@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const url = location.href;
+    const paraString = url.substring(url.indexOf('?')+1, url.length).split('&');
+    const requests = {}
+    for (const str of paraString) {
+      const index = str.indexOf('=')
+      requests[str.substring(0, index).toLowerCase()] = str.substring(index+1, str.length);
+    }
+
+    const redirect_url = requests.url ?? '/';
+    location.href = redirect_url.replace(/%hzreand/g, '&');
+  </script>
+</head>
+<body>
+這是一個重定向頁面。我不確定你是怎麼看到這些內容的，但我很確定你一定有亂搞。
+</body>
+</html>
