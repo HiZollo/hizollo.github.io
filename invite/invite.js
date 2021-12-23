@@ -6,8 +6,8 @@ for (const str of paraString) {
   requests[str.substring(0, index).toLowerCase()] = str.substring(index+1, str.length);
 }
 
-const clientId = requests.clientid ?? '1636382010871';
-const permissions = requests.permissions ?? '536870383095';
+const clientId = requests.clientid ?? '584677291318312963';
+const permissions = requests.permissions ?? '1636382010871';
 const scope = requests.scope ?? 'bot+applications.commands';
 
 location.href = encode(`/redirect?url=https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}`);
