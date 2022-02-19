@@ -16,7 +16,7 @@ const request = paras => {
 
 const teamColor = request('top');
 
-const validTeams = ['lead', 'code', 'art', 'web', 'test'];
+const validTeams = ['lead', 'code', 'art', 'web', 'copy'];
 
 if (teamColor !== '' && validTeams.includes(teamColor)) {
   const profileTop = document.getElementById('profile-top');

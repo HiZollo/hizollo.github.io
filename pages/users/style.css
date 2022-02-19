@@ -1,10 +1,10 @@
 :root {
   --av-width: 200px;
   --dev-lead-team: rgb(101, 124, 137);
-  --dev-code-team: rgb(230, 126, 34);
+  --dev-copy-team: rgb(230, 126, 34);
   --dev-art-team: rgb(233, 30, 99);
   --dev-web-team: rgb(52, 152, 219);
-  --dev-test-team: rgb(46, 204, 113);
+  --dev-code-team: rgb(46, 204, 113);
 }
 
 body {
@@ -43,8 +43,8 @@ a:active {
   background-color: var(--dev-web-team);
 }
 
-.bg-test {
-  background-color: var(--dev-test-team);
+.bg-copy {
+  background-color: var(--dev-copy-team);
 }
 
 .dev-lead-team {
@@ -67,8 +67,8 @@ a:active {
   white-space: nowrap;
 }
 
-.dev-test-team {
-  color: var(--dev-test-team);
+.dev-copy-team {
+  color: var(--dev-copy-team);
   white-space: nowrap;
 }
 
