@@ -18,6 +18,15 @@ img {
   font-family: monospace;
 }
 
+.deprecated {
+  display: block;
+  background-color: #EE9292;
+  margin: 15px auto;
+  border-left: #F63C3C 3px solid;
+  line-height: 50px;
+  padding-left: 40px;
+}
+
 @media (max-width: 700px) {
   img {
     margin: 0px auto;
